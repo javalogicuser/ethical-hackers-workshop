@@ -1,0 +1,89 @@
+
+Log4j questions
+
+What is the CVE for log4shell?
+CVE-2021-44228
+
+Which protocol is mainly used in the attack?
+LDAP
+RMI
+
+Which company originally reported the vulnerability?
+Alibaba
+
+What are some of the log levels of Log4j?
+FATAL
+ERROR
+WARN
+TRACE
+DEBUG
+INFO
+
+What sandbox gaming platform was vulnerable to the Log4shell exploit?
+Minecraft
+
+What is the current version of Log4j, not vulnerable to log4shell?
+2.17.1
+
+What vulnerability does log4shell exploit?
+input validation
+
+---------------
+
+Vulnerable Docker - Ubuntu - log4jpoc
+Solar - THM
+LogForge - HTB
+AWN script for remediation
+Any other scripts for checking
+
+Links during workshop
+https://tryhackme.com/room/solar#
+https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592
+https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
+https://github.com/Puliczek/awesome-list-of-secrets-in-environment-variables
+https://log4shell.tools/
+https://support.citrix.com/article/CTX335705
+https://jfrog.com/blog/log4shell-0-day-vulnerability-all-you-need-to-know/
+https://fossa.com/blog/quickly-find-remediate-log4j-vulnerabilities-log4shell/
+
+More Links
+
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228
+https://www.tutorialspoint.com/log4j/log4j_quick_guide.htm
+
+https://www.hackingarticles.in/a-detailed-guide-on-log4j-penetration-testing/
+https://www.datadoghq.com/blog/log4j-log4shell-vulnerability-overview-and-remediation/
+https://blog.checkpoint.com/2021/12/14/a-deep-dive-into-a-real-life-log4j-exploitation/
+https://0xdf.gitlab.io/2021/12/29/htb-logforge.html
+https://www.hackthebox.com/blog/Whats-Going-On-With-Log4j-Exploitation
+https://en.wikipedia.org/wiki/Log4Shell
+https://logging.apache.org/log4j/2.x/index.html
+https://nakedsecurity.sophos.com/2021/12/13/log4shell-explained-how-it-works-why-you-need-to-know-and-how-to-fix-it/
+https://vulndev.io/2021/12/11/lab-exploiting-log4shell-cve-2021-44228/
+https://github.com/Cyb3rWard0g/log4jshell-lab
+https://tryhackme.com/room/solar  - https://www.youtube.com/watch?v=lJeAgQQaDEw
+https://github.com/welk1n/JNDI-Injection-Exploit
+https://ippsec.rocks/?#
+https://www.prplbx.com/resources/blog/log4j/
+https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/log4j-vulnerabilities-attacks
+https://pythonrepo.com/repo/TaroballzChen-CVE-2021-44228-log4jVulnScanner-metasploit
+https://pythonrepo.com/repo/kozmer-log4j-shell-poc
+https://github.com/cyberxml/log4j-poc - rmi
+https://github.com/christophetd/log4shell-vulnerable-app
+https://github.com/cyberxml/log4j-poc
+https://github.com/Vulnmachines/log4jshell_CVE-2021-44228
+https://github.com/kannthu/CVE-2021-44228-Apache-Log4j-Rce
+
+Log4JPoc Walkthrough
+git clone https://github.com/kozmer/log4j-shell-poc.git
+docker build -t log4j-shell-poc .
+docker run --network host log4j-shell-poc
+https://mirrors.huaweicloud.com/java/jdk/8u202-b08/
+tar -xf jdk-8u202-linux-x64.tar.gz
+mv jdk-8u202 /usr/bin
+cd /usr/bin
+edit exploit to path
+/usr/bin/jdk1.8.0_202/bin/java
+
+-----------------------
+
